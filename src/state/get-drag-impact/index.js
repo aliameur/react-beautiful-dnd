@@ -80,6 +80,7 @@ export default ({
       insideDestination,
       afterCritical,
     }) ||
+    destination?.isCombineOnly && noImpact ||
     getReorderImpact({
       pageBorderBoxWithDroppableScroll,
       draggable,
